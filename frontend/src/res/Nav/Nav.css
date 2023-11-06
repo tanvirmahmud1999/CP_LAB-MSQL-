@@ -1,0 +1,72 @@
+
+.Nav{
+    z-index: -2px;
+    background-color: #ffffff;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 1px solid silver;
+}
+
+.lft{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    max-width: 400px;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+}
+.rht{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    max-width: 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+    box-sizing: border-box;
+    margin:5px;
+    position: relative;
+    z-index: 1;
+    height: 50px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+    transition-duration: 0.5s;
+
+}
+.rht .btn img{
+    height: 20px;
+    width: 20px;
+}
+.btn::after{
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0%;
+    width: 0%;
+    border-bottom: 2px solid blue;
+    transition-duration: 0.5s;
+}
+.btn:hover{
+    color: blue;
+}
+.btn:hover::after{
+    visibility: unset;
+    height: 100%;
+    width: 100%;
+}

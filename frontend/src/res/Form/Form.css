@@ -1,0 +1,118 @@
+.Form{
+    display: flex;
+    flex-direction: row;
+    min-width: 900px;
+    min-height: 600px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    width: 70%;
+    height: 90%;
+}
+.Form::after{
+    content: "";
+    background-color: #325FFF;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top : 0;
+    right : 0;
+    border-bottom-left-radius: 200px;
+    z-index: -1;
+}
+.form-lft{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(16px);
+}
+.form-lft a{
+    color: #000;
+    text-decoration: none;
+}
+.form-rht{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(16px);
+    padding: 10px;
+}
+.form-rht .inp{
+    width: 300px;
+    padding: 10px;
+    margin-top: 15px;
+
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    position: relative;
+}
+.inp +span{
+    position: relative;
+    width: 300px;
+    margin-left: 10px;
+    padding-right: 10px;
+}
+.inp +span::before{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 310px;
+    left: 0;
+    top: 0;
+    background-color: #325FFF;
+    transition-duration: 0.5s;
+}
+.inp +span::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    right: 0;
+    top: 0;
+    background-color: #04c474;
+    transition-delay: 0.3s;
+    transition-duration: 0.5s;
+}
+.form-rht .inp:focus{
+    width: 300px;
+    border: none;
+    outline: none;
+}
+.form-rht .inp:focus{
+    width: 300px;
+    border: none;
+    
+    /* outline: none; */
+}
+.inp:focus + span::before{
+    width: 0;
+}
+.inp:focus + span::after{
+    width: 310px;
+}
+.submit_container{
+    width: 310px;
+}
+.submit{
+    width: 150px;
+    background-color: #325FFF;
+    padding: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 25px;
+    height: 25px;
+}

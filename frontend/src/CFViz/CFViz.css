@@ -1,0 +1,30 @@
+.CFViz{
+    display: flex;
+    flex-direction: column;
+}
+
+.CFViz-top{
+    margin: 50px;
+    width: calc(100% - 100px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.CFViz-top input{
+    padding: 5px;
+    margin-right: 15px;
+    border : none;
+    border-bottom: 2px solid #325FFF;
+}
+.CFViz-top div{
+    background-color: #597dff;
+    color: #fff;
+    border-radius: 5px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+}

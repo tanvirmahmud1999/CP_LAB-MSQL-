@@ -1,0 +1,51 @@
+.WavyText{
+    height: fit-content;
+    width: fit-content;
+    cursor: default;
+}
+a .WavyText{
+  cursor: pointer;
+  text-decoration: inherit;
+}
+.WavyText span{
+    height: fit-content;
+    width: fit-content;
+    min-width: 5px;
+}
+.WavyText:hover span{
+    display: inline-block;
+    -webkit-animation: wave-text 0.5s ease-in-out 1;
+    animation: wave-text 0.5s ease-in-out 1;
+}
+.WavyText span:nth-child(5n + 0) {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+  }
+  .WavyText span:nth-child(5n + 1) {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s;
+  }
+  .WavyText span:nth-child(5n + 2) {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+  }
+  .WavyText span:nth-child(5n + 3) {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+  }
+  .WavyText span:nth-child(5n + 4) {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+  }
+  @keyframes wave-text {
+    00% {
+      transform: translateY(0em);
+    }
+    60% {
+      transform: translateY(-0.6em);
+    }
+    100% {
+      transform: translateY(0em);
+    }
+  }
+   

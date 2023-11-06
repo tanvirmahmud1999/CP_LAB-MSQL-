@@ -1,0 +1,86 @@
+.Post {
+  margin: 50px;
+}
+
+.PostTitle {
+  color: rgb(83, 158, 255);
+  text-decoration: none;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  cursor: pointer;
+}
+.PostContent {
+  margin: 15px;
+}
+
+.bottomBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  border: 1px solid rgb(151, 179, 255);
+  border-radius: 4px;
+}
+.PostTime {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.PostTime img {
+  height: 20px;
+  width: 240x;
+}
+.PostTime span {
+  margin: 5px;
+}
+.PostAuthor {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.PostAuthor a {
+  text-decoration: none;
+  margin-left: 5px;
+  color: rgb(83, 158, 255);
+}
+.WriteComment {
+  margin: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.TextEditor {
+  display: flex;
+  flex-direction: row;
+  width: calc(90% - 150px);
+}
+.commentButton {
+  display: flex;
+  color: #fff;
+  width: fit-content;
+  padding-left: 3px;
+  padding-right: 3px;
+  border-radius: 4px;
+  background-color: rgba(23, 28, 70, 0.541);
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 32px;
+  box-shadow: 5px 4px 17px -4px rgba(0, 0, 0, 0.75);
+  border: 1px solid #fff;
+  min-width: 50px;
+  margin: 50px;
+}

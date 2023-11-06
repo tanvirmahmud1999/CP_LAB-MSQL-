@@ -1,0 +1,11 @@
+.Login {
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  background-image: url(../Image/form_bg.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}

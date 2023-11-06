@@ -1,0 +1,16 @@
+.FadeScroll{
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    position:relative;
+    width: 100%;
+}
+.fadeIn{
+    opacity: 1;
+    bottom: 0;
+    left:0;
+    transform: scale(1);
+}
+.fadeOut{
+    opacity: 0%;
+    transform: scale(0.95);
+}

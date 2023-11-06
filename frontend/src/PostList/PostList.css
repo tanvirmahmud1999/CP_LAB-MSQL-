@@ -1,0 +1,29 @@
+.PostListHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px;
+}
+.RecentPosts {
+  font-family: serif;
+  font-size: 30px;
+}
+.NewPostBtn {
+  display: flex;
+  color: #fff;
+  width: fit-content;
+  padding-left: 3px;
+  padding-right: 3px;
+  border-radius: 4px;
+  background-color: rgba(23, 28, 70, 0.541);
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 32px;
+  box-shadow: 5px 4px 17px -4px rgba(0, 0, 0, 0.75);
+  border: 1px solid #fff;
+  text-decoration: none;
+}

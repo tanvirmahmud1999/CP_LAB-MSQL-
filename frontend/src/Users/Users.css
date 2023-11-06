@@ -1,0 +1,26 @@
+.Users {
+  padding: 50px;
+}
+.userListItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 25px;
+  padding: 5px;
+  border-radius: 4px;
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(80, 121, 255, 0.555));
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+}
+.userListItem .userName {
+  width: 200px;
+  text-decoration: none;
+  color: rgb(132, 165, 255);
+  font-size: 20px;
+  cursor: pointer;
+}
+.userListItem .userReg {
+  color: rgb(0, 160, 85);
+}
+.userListItem .userPhone {
+  color: rgb(104, 133, 0);
+}

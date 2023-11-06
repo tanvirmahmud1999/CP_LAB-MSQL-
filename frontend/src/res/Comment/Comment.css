@@ -1,0 +1,45 @@
+.Comment {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(83, 158, 255);
+  border-radius: 4px;
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(80, 121, 255, 0.555));
+}
+.CommentTop {
+  padding: 5px;
+  background-color: rgba(102, 138, 255, 0.05);
+}
+.CommentBottom {
+  padding: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.CommentTime {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.CommentTime img {
+  height: 20px;
+  width: 240x;
+}
+.CommentTime span {
+  margin: 5px;
+}
+.CommentAuthor {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.CommentAuthor a {
+  text-decoration: none;
+  margin-left: 5px;
+  color: rgb(83, 158, 255);
+}

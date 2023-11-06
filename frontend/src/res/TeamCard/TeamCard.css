@@ -1,0 +1,31 @@
+.TeamCard {
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 20px;
+}
+.TeamName {
+  width: 100%;
+  background-color: rgb(29, 28, 65);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  min-height: 40px;
+  color: #fff;
+  font-size: 20px;
+  font-family: serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+}
+.teamMember,
+.coach {
+  margin: 25px;
+  display: block;
+  text-decoration: none;
+}
+.teamMember {
+  color: rgb(100, 136, 255);
+}
+.coach {
+  color: rgb(255, 128, 128);
+}

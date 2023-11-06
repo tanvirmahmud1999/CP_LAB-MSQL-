@@ -1,0 +1,139 @@
+.contestTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  font-family: serif;
+  color: #5e5effb0;
+  padding: 20px;
+}
+.practiceContestSection {
+  margin: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  margin-top: 100px;
+  margin: 50px;
+  width: calc(100% - 100px);
+  position: relative;
+  background-color: #ffffffb0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  backdrop-filter: blur(8px);
+  border-radius: 5px;
+  z-index: 1;
+  min-height: 250px;
+}
+
+.practiceContestSection::after {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  background-color: #325eff27;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  border-bottom-right-radius: 100%;
+  border-top-left-radius: 5px;
+}
+.practiceContestSection::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #325eff7a;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  border-top-left-radius: 100%;
+  border-bottom-right-radius: 5px;
+}
+.sectionHeader {
+  margin-bottom: 15px;
+  padding: 5px;
+  font-family: serif;
+  font-size: 24px;
+}
+.practiceContestContainer {
+  border-radius: 4px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.practiceContest {
+  padding: 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(103, 113, 255);
+}
+
+.teamSection {
+  margin: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  margin-top: 100px;
+  margin: 50px;
+  width: calc(100% - 100px);
+  position: relative;
+  background-color: #ffffffb0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  backdrop-filter: blur(8px);
+  border-radius: 5px;
+  z-index: 1;
+  min-height: 250px;
+}
+
+.teamSection::after {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  background-color: #325eff27;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  border-bottom-right-radius: 100%;
+  border-top-left-radius: 5px;
+}
+.teamSection::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #325eff7a;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  border-top-left-radius: 100%;
+  border-bottom-right-radius: 5px;
+}
+.teamSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.teamsContainer {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: fit-content;
+}
+@media only screen and (max-width: 1450px) {
+  .teamsContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .teamsContainer {
+    grid-template-columns: 1fr;
+  }
+}

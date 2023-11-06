@@ -1,0 +1,7 @@
+.BarChart{
+    min-width: 1000px;
+    width: fit-content;
+    position: relative;
+    object-fit: contain;
+    margin: auto;
+}
